@@ -63,7 +63,6 @@
     <div class="carousel-item active">
       <img src="img/4.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
-        <img src="/img/logo.png" alt="125" width="150" class="img-fluid rounded-circle">
         <h5>BloodBuddy</h5>
         <p>Te damos la Bienvenida a BloodBuddy</p>
         <p><a href="{{route('register')}}"class="btn btn-danger mt-3" >Registrarme</a></p>
@@ -72,7 +71,6 @@
     <div class="carousel-item">
       <img src="img/donacion.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
-        <img src="/img/logo.png" alt="125" width="150" class="img-fluid rounded-circle">
         <h5>La sangre es vital</h5>
         <p>la sangre ayuda a curar muchas enfermedades</p>
       </div>
@@ -80,7 +78,6 @@
     <div class="carousel-item">
       <img src="img/2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
-        <img src="/img/logo.png" alt="125" width="150" class="img-fluid rounded-circle">
         <h5>Salva vidas</h5>
         <p>Gracias a la sangre se pueden salvar muchas vidas</p>
       </div>
@@ -88,7 +85,6 @@
     <div class="carousel-item">
       <img src="img/5.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption">
-        <img src="/img/logo.png" alt="125" width="150" class="img-fluid rounded-circle">
         <h5>Donar es ayudar</h5>
         <p>La mejor forma de ayudar es donar</p>
       </div>
