@@ -5,7 +5,6 @@ Create Donante
 @endsection
 
 @section('content')
-<link rel="stylesheet" href="/css/style.css">
 <br><br>
 <div class="container" align="center">
     <div class="row justify-content "></div>
