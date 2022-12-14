@@ -2,6 +2,7 @@
 
 /**Aqui estamos utilizando el controlador de nuestra opcion de mi perfil ya que en el se encuentran
 todos los metodos**/
+
 use App\Http\Controllers\UserAjustesController;
 
 use Illuminate\Support\Facades\Route;
@@ -57,6 +58,8 @@ Route::resource('donantes', App\Http\Controllers\DonanteController::class)->midd
     'auth'
     /**'verified'**/
 );
+
+Route::resource('pacientes', App\Http\Controllers\PacienteController::class)->middleware('auth');
 
 /**Esta es la ruta de Home que se nos muestra al Iniciar Sesion */
 /**Aqui tambien le decimos que cuando el usuario inicie sesion lo redirija a la ruta home**/
