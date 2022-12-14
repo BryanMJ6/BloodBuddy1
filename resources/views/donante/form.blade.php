@@ -1,4 +1,4 @@
-<div class="box box-info padding-1">
+div class="box box-info padding-1">
     <div class="box-body">
         
     <h5>
@@ -90,6 +90,6 @@
 
     <div class="box-footer mt20 ">
         <button type="submit" class="btn btn-danger">Registrarme Como donante</button>
-        <a class="btn btn-dark" href="{{route('home')}}">Ya estoy registrado Volver a Inicio</a>
+        <a class="btn btn-dark" href="home">Ya estoy registrado Volver a Inicio</a>
     </div>
 </div>

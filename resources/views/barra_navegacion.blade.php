@@ -26,12 +26,6 @@
         <li class=" nav-item">
         <a a class="nav-link  " href="{{route('NewPassword')}}">Perfil</a>
         </li>
-        <li class=" nav-item">
-        <a a class="nav-link  " href="{{route('donantes.create')}}">Donante</a>
-        </li>
-          <li class=" nav-item">
-        <a a class="nav-link  " href="{{route('pacientes.create')}}">Donante</a>
-        </li>
         <li class="nav-item">
         <a class=" nav-link " href="{{ route('password.request') }}">Restablecer Contraseña</a>
         </li>

@@ -4,8 +4,27 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-/**Aqui le decimos que tambien utilice el modelo Donante que eta dentro de 
-la carpeta de models*/
+/**
+ * Class Donante
+ *
+ * @property $id
+ * @property $soy
+ * @property $nombres
+ * @property $apellidos
+ * @property $edad
+ * @property $telefono
+ * @property $email
+ * @property $donante
+ * @property $sexo
+ * @property $tipo_sangre
+ * @property $dui
+ * @property $padecimiento
+ * @property $created_at
+ * @property $updated_at
+ *
+ * @package App
+ * @mixin \Illuminate\Database\Eloquent\Builder
+ */
 class Donante extends Model
 {
 
@@ -50,11 +69,11 @@ class Donante extends Model
 	/**Aqui le decimos que nos muestre los registros por 4 cada pagina*/
 	protected $perPage = 2;
 
+
 	/**
 	 * Attributes that should be mass-assignable.
 	 *
 	 * @var array
 	 */
-	/**Aqui validamos todos los valores anteriores **/
 	protected $fillable = ['soy', 'nombres', 'apellidos', 'edad', 'telefono', 'email', 'donante', 'sexo', 'tipo_sangre', 'dui', 'padecimiento'];
 }

@@ -54,12 +54,8 @@ Route::resource('infoextras', App\Http\Controllers\InfoExtraController::class);
 
 /**Esta es la ruta de nuestro formulario de donantes**/
 /**es de tipo resource ya que esta dentro de una carpeta llamada donantes**/
-Route::resource('donantes', App\Http\Controllers\DonanteController::class)->middleware(
-    'auth'
-    /**'verified'**/
-);
 
-Route::resource('pacientes', App\Http\Controllers\PacienteController::class)->middleware('auth');
+/**'verified'**/
 
 /**Esta es la ruta de Home que se nos muestra al Iniciar Sesion */
 /**Aqui tambien le decimos que cuando el usuario inicie sesion lo redirija a la ruta home**/

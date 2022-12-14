@@ -4,19 +4,15 @@
 Donante
 @endsection
 @section('content')
-<link rel="stylesheet" href="/css/estilos.css">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/normalize.css">
-<br><br><br>
 </div>
 <div class="row justify-content-center">
-    <div class="col-sm-8">
-        <div class="card order-card">
-            <div class="card-header texto textonegro">
+    <div class="col-sm-7">
+        <div class="card">
+            <div class="card-header">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                    <span id="card_title" class="texto textonegro">
-                        {{ __('Detalles de ultimas personas Registradas') }}
+                    <span id="card_title">
+                        {{ __('Donante') }}
                     </span>
 
                 </div>
@@ -28,10 +24,10 @@ Donante
             </div>
             @endif
 
-            <div class="card-body bg-light bg-opacity-100">
+            <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">
-                    <caption>Descripcion de los ultimos registrados</caption>
+                        <caption>Descripcion de los ultimos registrados</caption>
                         <thead class="thead">
                             <tr>
                                 <th>Soy un</th>
@@ -41,7 +37,6 @@ Donante
                                 <th>Sexo</th>
                                 <th>Tipo Sangre</th>
                                 <th>Padecimiento</th>
-
                                 <th></th>
                             </tr>
                         </thead>
@@ -55,11 +50,11 @@ Donante
                                 <td>{{ $donante->sexo }}</td>
                                 <td class="text-danger"><h5>{{ $donante->tipo_sangre }}</h5></td>
                                 <td>{{ $donante->padecimiento }}</td>
+                                
 
                                 <td>
                                     
                                     <form action="{{ route('donantes.destroy',$donante->id) }}" method="POST">
-
                                         @csrf
                                         @method('DELETE')
 
@@ -67,17 +62,19 @@ Donante
                             </tr> 
                             @endforeach
                             <div class="row content-center">
-                                <h4>
-                                    Hola🖐
+                                <h3>
+                                    Hola🖐️
                                     <h2 class="text-danger">
 
                                     </h2>
 
-                                    <h4>
+                                    <h2>
                                         🎉¡Muchas gracias por haberte registrado!🎉 
-                                        <h4>Aqui esta la lista de las ultimas Personas Registradas<h4>
-                                                <h4>
-                                                    <a class="btn btn-danger textonegro colorrojo" href="{{route('home')}}">Regresar a Inicio</a>                         
+                                        <h2>Aqui esta la lista de las ultimas Personas Registradas<h1>
+                                                <h3>
+                                                    <a class="btn btn-danger" href="home">Regresar al
+                                                        Menu de Inicio</a>
+                                                    <a class="btn btn-success" href="{{ route('citas.create') }}"><i class="fa fa-fw fa-edit"></i>Crear cita</a>    
                         </form>                              
                         </tbody>
                     </table>
@@ -91,3 +88,4 @@ Donante
 </div>
 
 @endsection
+
