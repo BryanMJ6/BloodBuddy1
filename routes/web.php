@@ -54,6 +54,7 @@ Route::resource('infoextras', App\Http\Controllers\InfoExtraController::class);
 
 /**Esta es la ruta de nuestro formulario de donantes**/
 /**es de tipo resource ya que esta dentro de una carpeta llamada donantes**/
+Route::resource('donantes', App\Http\Controllers\DonanteController::class)->middleware('auth');
 
 /**'verified'**/
 
